@@ -1,0 +1,123 @@
+//-----------------------------------------------------------------------------
+// Name:        day one
+// Purpose:     first day project - unit converter
+//
+// Author:      Riven
+//
+// Created:     14-Aug-2018
+// Updated:     14-Aug-2018
+//-----------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+// function prototypes
+void lengthConverter();
+void tempConverter();
+void energyConverter();
+
+int main() {
+    int choice;
+
+    cout << "==============================" << endl;
+    cout << "       UNIT CONVERTER" << endl;
+    cout << "==============================" << endl;
+
+    cout << "1. Length Converter (cm / m / km)" << endl;
+    cout << "2. Temperature Converter (C / F)" << endl;
+    cout << "3. Energy Converter (Joules / Calories)" << endl;
+    cout << "4. Exit" << endl;
+
+    cout << "Choose an option (1-4): ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            lengthConverter();
+            break;
+        case 2:
+            tempConverter();
+            break;
+        case 3:
+            energyConverter();
+            break;
+        case 4:
+            cout << "Exiting..." << endl;
+            break;
+        default:
+            cout << "Invalid option." << endl;
+    }
+
+    return 0;
+}
+
+//----------------- LENGTH CONVERTER -----------------
+void lengthConverter() {
+    double value;
+    int option;
+
+    cout << "\n--- Length Converter ---" << endl;
+    cout << "1. cm → m" << endl;
+    cout << "2. m → cm" << endl;
+    cout << "3. m → km" << endl;
+    cout << "4. km → m" << endl;
+    cout << "Pick one: ";
+    cin >> option;
+
+    cout << "Enter value: ";
+    cin >> value;
+
+    switch (option) {
+        case 1: cout << value << " cm = " << value / 100 << " m" << endl; break;
+        case 2: cout << value << " m = " << value * 100 << " cm" << endl; break;
+        case 3: cout << value << " m = " << value / 1000 << " km" << endl; break;
+        case 4: cout << value << " km = " << value * 1000 << " m" << endl; break;
+        default: cout << "Invalid option." << endl;
+    }
+}
+
+//----------------- TEMPERATURE CONVERTER -----------------
+void tempConverter() {
+    double value;
+    int option;
+
+    cout << "\n--- Temperature Converter ---" << endl;
+    cout << "1. Celsius → Fahrenheit" << endl;
+    cout << "2. Fahrenheit → Celsius" << endl;
+    cout << "Pick one: ";
+    cin >> option;
+
+    cout << "Enter value: ";
+    cin >> value;
+
+    if (option == 1) {
+        cout << value << " °C = " << (value * 9/5) + 32 << " °F" << endl;
+    } else if (option == 2) {
+        cout << value << " °F = " << (value - 32) * 5/9 << " °C" << endl;
+    } else {
+        cout << "Invalid option." << endl;
+    }
+}
+
+//----------------- ENERGY CONVERTER -----------------
+void energyConverter() {
+    double value;
+    int option;
+
+    cout << "\n--- Energy Converter ---" << endl;
+    cout << "1. Joules → Calories" << endl;
+    cout << "2. Calories → Joules" << endl;
+    cout << "Pick one: ";
+    cin >> option;
+
+    cout << "Enter value: ";
+    cin >> value;
+
+    if (option == 1) {
+        cout << value << " J = " << value / 4.184 << " cal" << endl;
+    } else if (option == 2) {
+        cout << value << " cal = " << value * 4.184 << " J" << endl;
+    } else {
+        cout << "Invalid option." << endl;
+    }
+}
