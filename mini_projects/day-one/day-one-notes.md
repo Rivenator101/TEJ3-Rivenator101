@@ -85,7 +85,7 @@ For this project, I created three functions:
 ## Skills Gained
 
 * Using `cin` and `cout`
-* Creating and storin values in variables
+* Creating and storing values in variables
 * Making decisions using `if/else` and `switch`
 * Writing and calling functions
 * Doing math with user input
