@@ -1,0 +1,24 @@
+//-----------------------------------------------------------------------------
+// Name:        day two
+// Purpose:     2nd day project - password strength checker
+//
+// Author:      Riven
+//
+// Created:     20-Aug-2018
+// Updated:     20-Aug-2018
+//-----------------------------------------------------------------------------
+
+/*2. Password Strength Checker
+User enters a password → your program checks:
+length
+
+
+has number?
+
+
+has uppercase?
+
+
+has special character?
+ Concepts: loops, strings, boolean flags
+*/
