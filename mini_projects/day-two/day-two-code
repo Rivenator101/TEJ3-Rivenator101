@@ -10,15 +10,30 @@
 
 /*2. Password Strength Checker
 User enters a password → your program checks:
-length
-
-
-has number?
-
-
-has uppercase?
-
-
-has special character?
+- length (8+)
+- has number?
+- has uppercase?
+- has special character?
  Concepts: loops, strings, boolean flags
 */
+
+#include <iostream>
+using namespace std;
+
+// function prototypes
+void lenghtchecker();
+void numberincluded();
+void uppercaseletter();
+void specialcharacter ();
+
+int main() {
+    int choice;
+
+    cout << "==============================" << endl;
+    cout << "       Password checker" << endl;
+    cout << "==============================" << endl;
+
+    cout << "pls enter password..." << endl;
+    cout << "_____________________" << endl;
+
+
