@@ -12,8 +12,7 @@ using namespace std;
 * `#include <iostream>` → includes the Input/Output library so we can use `cin` and `cout`.
 * `using namespace std;` → allows us to write `cout` instead of `std::cout`.
 
-**Explanation:**
-*"This is standard setup for any program that uses input and output in C++."*
+*This is standard setup for any progrm that uses input and output in C++.*
 
 ---
 
@@ -28,8 +27,7 @@ void energyConverter();
 * A **function prototype** tells the compiler: “I’ll define this function later.”
 * `void` → the function doesn’t return a value.
 
-**Explanation:**
-*"We declare these functions at the top so the main function can call them before they are defined."*
+*We declare these functions at the top so the main function can call them before they are defined.*
 
 ---
 
@@ -47,8 +45,7 @@ int main() {
 * `return 0;` → signals that the program finished successfully.
 * `int choice;` → creates a variable to store the user’s menu selection.
 
-**Explanation:**
-*"All C++ programs start with `main()`. Variables inside `main` store user input or temporary data."*
+*All C++ programs start with `main()`. Variables inside `main` store user input or temporary data.*
 
 ---
 
@@ -62,8 +59,7 @@ cin >> choice;
 * `cout` → prints text or results to the screen.
 * `cin` → waits for the user to type something and stores it in a variable.
 
-**Explanation:**
-*"We use these to create an interactive menu and get user input."*
+*We use these to create an interactive menu and get user input.*
 
 ---
 
@@ -83,8 +79,7 @@ switch (choice) {
 * `break;` → stops the program from continuing to the next case.
 * `default` → runs if no cases match.
 
-**Explanation:**
-*"We use `switch` to select which conversion function to run based on the user’s menu choice."*
+*We use `switch` to select which conversion function to run based on the user’s menu choice.*
 
 ---
 
@@ -105,11 +100,10 @@ void lengthConverter() {
 ```
 
 * `void lengthConverter()` → defines a function for length conversions.
-* Local variables `value` and `option` exist only inside this function.
+* Local variables `value` and `option` exist ony inside this function.
 * `switch` selects the type of length conversion.
 
-**Explanation:**
-*"Functions allow us to organize code into sections that do specific tasks. This makes the program easier to read and maintain."*
+*Functions allow us to organize code into sections that do specific tasks. This makes the program easier to read and maintain.*
 
 ---
 
@@ -128,9 +122,7 @@ value / 4.184      // Joules → calories
   * `/` → divide
   * `*` → multiply
   * `+` → add
-
-**Explanation:**
-*"These formulas perform the actual unit conversion. We input a value and output the converted result."*
+*These formulas perform the actual unit conversion. We input a value and output the converted result.*
 
 ---
 
@@ -142,8 +134,7 @@ value / 4.184      // Joules → calories
 * **Switch** → makes decision-making easier than using multiple `if/else`.
 * **Math formulas** → perform the actual conversions.
 
-**Teacher-Friendly Explanation:**
-*"The program first shows a menu and asks the user what they want to convert. Using `switch`, it calls the appropriate function. Inside each function, we ask for a value, do the conversion with math formulas, and print the result using `cout`. This teaches us about input/output, variables, decision-making, functions, and math in C++."*
+*The program first shows a menu and asks the user what they want to convertt. Using `switch`, it calls the appropriate function. Inside each function, we ask for a value, do the conversion with math formulass, and print the result using `cout`. This teaches us about input/output, variables, decision-making, functions, and math in C++.*
 
 ---
 
