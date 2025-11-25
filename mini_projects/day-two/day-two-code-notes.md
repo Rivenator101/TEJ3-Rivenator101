@@ -5,7 +5,7 @@
 
 ### By Riven ;3
 
-## What I Learned Today
+## What I Learned Today (see study notes for full notes)
 
 To build a Password Strength Checker in C++, I needed to understand four core concepts:
 
