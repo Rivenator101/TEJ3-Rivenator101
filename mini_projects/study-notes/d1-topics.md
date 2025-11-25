@@ -1,6 +1,7 @@
 
 
 # **Day 1 – Unit Converter: How it Works & Syntax Explanation**
+(sources: w3 schools, mit open course ware lecture notes, standerd c++)
 
 ### 1️**Headers and Namespaces**
 
@@ -9,8 +10,8 @@
 using namespace std;
 ```
 
-* `#include <iostream>` → includes the Input/Output library so we can use `cin` and `cout`.
-* `using namespace std;` → allows us to write `cout` instead of `std::cout`.
+* `#include <iostream>` -> includes the Input/Output library so we can use `cin` and `cout`.
+* `using namespace std;` -> allows us to write `cout` instead of `std::cout`.
 
 *This is standard setup for any progrm that uses input and output in C++.*
 
@@ -25,7 +26,7 @@ void energyConverter();
 ```
 
 * A **function prototype** tells the compiler: “I’ll define this function later.”
-* `void` → the function doesn’t return a value.
+* `void` -> the function doesn’t return a value.
 
 *We declare these functions at the top so the main function can call them before they are defined.*
 
@@ -41,9 +42,9 @@ int main() {
 }
 ```
 
-* `int main()` → the starting point of the program.
-* `return 0;` → signals that the program finished successfully.
-* `int choice;` → creates a variable to store the user’s menu selection.
+* `int main()` -> the starting point of the program.
+* `return 0;` -> signals that the program finished successfully.
+* `int choice;` -> creates a variable to store the user’s menu selection.
 
 *All C++ programs start with `main()`. Variables inside `main` store user input or temporary data.*
 
@@ -56,8 +57,8 @@ cout << "Choose an option (1-4): ";
 cin >> choice;
 ```
 
-* `cout` → prints text or results to the screen.
-* `cin` → waits for the user to type something and stores it in a variable.
+* `cout` -> prints text or results to the screen.
+* `cin` -> waits for the user to type something and stores it in a variable.
 
 *We use these to create an interactive menu and get user input.*
 
@@ -75,9 +76,9 @@ switch (choice) {
 }
 ```
 
-* `switch` → checks a variable and executes code for the matching `case`.
-* `break;` → stops the program from continuing to the next case.
-* `default` → runs if no cases match.
+* `switch` -> checks a variable and executes code for the matching `case`.
+* `break;` -> stops the program from continuing to the next case.
+* `default` -> runs if no cases match.
 
 *We use `switch` to select which conversion function to run based on the user’s menu choice.*
 
@@ -99,7 +100,7 @@ void lengthConverter() {
 }
 ```
 
-* `void lengthConverter()` → defines a function for length conversions.
+* `void lengthConverter()` -> defines a function for length conversions.
 * Local variables `value` and `option` exist ony inside this function.
 * `switch` selects the type of length conversion.
 
@@ -128,11 +129,11 @@ value / 4.184      // Joules → calories
 
 ### 8️**Putting it All Together**
 
-* **Main function** → shows the menu, gets the user’s choice, calls the correct function.
-* **Functions** → handle specific conversions and print the results.
-* **Input/output** → lets the user interact with the program.
-* **Switch** → makes decision-making easier than using multiple `if/else`.
-* **Math formulas** → perform the actual conversions.
+* **Main function** -> shows the menu, gets the user’s choice, calls the correct function.
+* **Functions** -> handle specific conversions and print the results.
+* **Input/output** -> lets the user interact with the program.
+* **Switch** -> makes decision-making easier than using multiple `if/else`.
+* **Math formulas** -> perform the actual conversions.
 
 *The program first shows a menu and asks the user what they want to convertt. Using `switch`, it calls the appropriate function. Inside each function, we ask for a value, do the conversion with math formulass, and print the result using `cout`. This teaches us about input/output, variables, decision-making, functions, and math in C++.*
 
