@@ -113,11 +113,3 @@ if (password.length() >= 8 && hasUpper && hasDigit && hasSpecial) {
 *If all the conditions are true (length, uppercase, number, special), the password is strong. Otherwise, it’s weak.*
 
 ---
-
-# **7️ How to Explain It Verbally**
-
-You could say something like this to your teacher:
-
-*The program asks the user for a password using `cin`. Then it checks every character using a `for` loop. Boolean flags remember whether the password has uppercase letters, numbers, or special characters. After checking all characters, we use `if/else` to decide whether the password meets all requirements and display the result with `cout`.*
-
----
