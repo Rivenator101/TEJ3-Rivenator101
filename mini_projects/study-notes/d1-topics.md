@@ -3,7 +3,7 @@
 # **Day 1 – Unit Converter: How it Works & Syntax Explanation**
 (sources: w3 schools, mit open course ware lecture notes, standerd c++)
 
-### 1️**Headers and Namespaces**
+### 1️ **Headers and Namespaces**
 
 ```cpp
 #include <iostream>
@@ -17,7 +17,7 @@ using namespace std;
 
 ---
 
-### 2️**Function Prototypes**
+### 2️ **Function Prototypes**
 
 ```cpp
 void lengthConverter();
@@ -32,7 +32,7 @@ void energyConverter();
 
 ---
 
-### 3️**The Main Function**
+### 3️ **The Main Function**
 
 ```cpp
 int main() {
@@ -50,7 +50,7 @@ int main() {
 
 ---
 
-### 4️**Input and Output (`cin` / `cout`)**
+### 4️ **Input and Output (`cin` / `cout`)**
 
 ```cpp
 cout << "Choose an option (1-4): ";
@@ -64,7 +64,7 @@ cin >> choice;
 
 ---
 
-### 5️**Conditionals and Switch**
+### 5️ **Conditionals and Switch**
 
 ```cpp
 switch (choice) {
@@ -84,7 +84,7 @@ switch (choice) {
 
 ---
 
-### 6️**Functions**
+### 6️ **Functions**
 
 Example: **Length Converter**
 
@@ -108,7 +108,7 @@ void lengthConverter() {
 
 ---
 
-### 7️**Math in Conversions**
+### 7️ **Math in Conversions**
 
 Examples:
 
@@ -127,7 +127,7 @@ value / 4.184      // Joules → calories
 
 ---
 
-### 8️**Putting it All Together**
+### 8️ **Putting it All Together**
 
 * **Main function** -> shows the menu, gets the user’s choice, calls the correct function.
 * **Functions** -> handle specific conversions and print the results.
