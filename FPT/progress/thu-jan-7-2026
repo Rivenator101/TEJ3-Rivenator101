@@ -1,0 +1,5 @@
+On Day 2 of the project, I began the physical assembly and initial testing of the electronic components. I wired the Arduino Uno to a breadboard and successfully connected a servo motor to verify correct power distribution and signal control.
+
+I wrote and tested Arduino code to control the servo motor, confirming that the servo responded correctly to programmed position changes. This step was important to ensure that both the wiring and code functioned as expected before adding additional components.
+
+Throughout the process, I focused on keeping the wiring organized and safe to prevent loose connections or short circuits. By the end of Day 2, I had confirmed that the Arduino, breadboard, and servo motor could work together reliably, providing a solid foundation for adding more inputs and outputs in the next stages of the project.
